@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Tic‑Tac‑Toe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<h1>Tic‑Tac‑Toe</h1>
+
+
+<section class="controls">
+<label>
+Mode:
+<select id="modeSelect">
+<option value="pvp">Player vs Player</option>
+<option value="pvc">Player vs CPU</option>
+</select>
+</label>
+
+
+<label id="aiMarkLabel">
+You play as:
+<select id="playerMarkSelect">
+<option value="X">X (goes first)</option>
+<option value="O">O (goes second)</option>
+</select>
+</label>
+
+
+<button id="restartBtn">Restart</button>
+</section>
+
+
+<section class="board" id="board" aria-label="Tic tac toe" role="grid">
+<!-- 9 cells inserted by JS -->
+</section>
+
+
+<section class="status" id="status">Current turn: <span id="turn">X</span></section>
+
+
+<section class="scoreboard" id="scoreboard">
+<div>X wins: <span id="xScore">0</span></div>
+<div>O wins: <span id="oScore">0</span></div>
+<div>Draws: <span id="drawScore">0</span></div>
+</section>
+
+
+<footer class="notes">Tip: Play vs CPU to try the unbeatable minimax AI.</footer>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
