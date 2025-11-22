@@ -1,4 +1,4 @@
-// script.js - simple Tic-Tac-Toe with minimax AI (unbeatable)
+
 
 const boardEl = document.getElementById('board');
 const statusEl = document.getElementById('status');
